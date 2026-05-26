@@ -1,0 +1,151 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Alice Vance",
+      "email": "alice@example.com",
+      "role": "Admin",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=120",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    },
+    {
+      "id": "u2",
+      "name": "Bob Carter",
+      "email": "bob@example.com",
+      "role": "Admin",
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=120",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    },
+    {
+      "id": "u3",
+      "name": "Charlie Davis",
+      "email": "charlie@example.com",
+      "role": "Member",
+      "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=120",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    },
+    {
+      "id": "u4",
+      "name": "David Mills",
+      "email": "david@example.com",
+      "role": "Member",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=120",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "Acme Web Redesign",
+      "description": "Complete overhaul of the Acme Corp landing pages, customer portals, and CSS system using Tailwind v4 and React.",
+      "ownerId": "u1",
+      "memberIds": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "createdAt": "2026-05-16T09:17:14.577Z"
+    },
+    {
+      "id": "p2",
+      "name": "Mobile App MVP",
+      "description": "Prototyping a light cross-platform task manager application for teams in the field.",
+      "ownerId": "u2",
+      "memberIds": [
+        "u1",
+        "u2",
+        "u4"
+      ],
+      "createdAt": "2026-05-21T09:17:14.577Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "projectId": "p1",
+      "title": "Design responsive landing wires",
+      "description": "Create Figma wires and responsive layout prototypes for the secondary checkout and dashboard pages.",
+      "assignedToId": "u4",
+      "status": "In Progress",
+      "priority": "High",
+      "dueDate": "2026-05-29",
+      "createdAt": "2026-05-18T09:17:14.577Z",
+      "updatedAt": "2026-05-24T09:17:14.577Z"
+    },
+    {
+      "id": "t2",
+      "projectId": "p1",
+      "title": "Setup Express router & model routes",
+      "description": "Configure clean API endpoints for authentication, project scopes, and task manipulation with express router.",
+      "assignedToId": "u3",
+      "status": "Completed",
+      "priority": "High",
+      "dueDate": "2026-05-24",
+      "createdAt": "2026-05-17T09:17:14.577Z",
+      "updatedAt": "2026-05-25T09:17:14.577Z"
+    },
+    {
+      "id": "t3",
+      "projectId": "p1",
+      "title": "Integrate custom CSS fonts & themes",
+      "description": "Import Space Grotesk display fonts and configure the @theme variables inside index.css.",
+      "assignedToId": "u3",
+      "status": "To Do",
+      "priority": "Medium",
+      "dueDate": "2026-05-31",
+      "createdAt": "2026-05-19T09:17:14.577Z",
+      "updatedAt": "2026-05-19T09:17:14.577Z"
+    },
+    {
+      "id": "t4",
+      "projectId": "p2",
+      "title": "Perform compliance regulatory audit",
+      "description": "Run automated checks and prepare a CSV report outlining visual color-contrast accessibility compliance across all headers.",
+      "assignedToId": "u1",
+      "status": "To Do",
+      "priority": "High",
+      "dueDate": "2026-05-23",
+      "createdAt": "2026-05-22T09:17:14.577Z",
+      "updatedAt": "2026-05-22T09:17:14.577Z"
+    },
+    {
+      "id": "t5",
+      "projectId": "p2",
+      "title": "Prototype animation loops with motion",
+      "description": "Check Framer/Motion spring layouts and add drag feedback cards for task column transitions.",
+      "assignedToId": "u4",
+      "status": "In Review",
+      "priority": "Low",
+      "dueDate": "2026-06-05",
+      "createdAt": "2026-05-22T09:17:14.577Z",
+      "updatedAt": "2026-05-25T09:17:14.577Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "l1",
+      "projectId": "p1",
+      "userId": "u1",
+      "userName": "Alice Vance",
+      "action": "initialized the Acme Web Redesign project",
+      "timestamp": "2026-05-16T09:17:14.577Z"
+    },
+    {
+      "id": "l2",
+      "projectId": "p1",
+      "userId": "u3",
+      "userName": "Charlie Davis",
+      "action": "marked \"Setup Express router & model routes\" as Completed",
+      "timestamp": "2026-05-25T09:17:14.577Z"
+    },
+    {
+      "id": "l3",
+      "projectId": "p2",
+      "userId": "u2",
+      "userName": "Bob Carter",
+      "action": "created the Mobile App MVP project",
+      "timestamp": "2026-05-21T09:17:14.577Z"
+    }
+  ]
+}
